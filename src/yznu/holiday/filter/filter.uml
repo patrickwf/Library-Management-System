@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="filter">
+  <packagedElement xmi:type="uml:Package" xmi:id="__s2OwJcREeSMie7FgV_S3g" name="yznu">
+    <packagedElement xmi:type="uml:Package" xmi:id="__s2OwZcREeSMie7FgV_S3g" name="holiday">
+      <packagedElement xmi:type="uml:Package" xmi:id="__s2OwpcREeSMie7FgV_S3g" name="filter">
+        <packagedElement xmi:type="uml:Class" xmi:id="__s210JcREeSMie7FgV_S3g" name="CharacterFilter" clientDependency="__35BIZcREeSMie7FgV_S3g">
+          <interfaceRealization xmi:id="__35BIZcREeSMie7FgV_S3g" name="Filter" supplier="__35BIJcREeSMie7FgV_S3g" client="__s210JcREeSMie7FgV_S3g" contract="__35BIJcREeSMie7FgV_S3g"/>
+          <ownedOperation xmi:id="__35oMJcREeSMie7FgV_S3g" name="init" visibility="public">
+            <ownedParameter xmi:id="__35oMZcREeSMie7FgV_S3g" name="fConfig" type="__3oidZcREeSMie7FgV_S3g"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="__36PQJcREeSMie7FgV_S3g" name="destroy" visibility="public"/>
+          <ownedOperation xmi:id="__37dYJcREeSMie7FgV_S3g" name="doFilter" visibility="public">
+            <ownedParameter xmi:id="__37dYZcREeSMie7FgV_S3g" name="req" type="__3pJgJcREeSMie7FgV_S3g"/>
+            <ownedParameter xmi:id="__37dYpcREeSMie7FgV_S3g" name="res" type="__3pJgZcREeSMie7FgV_S3g"/>
+            <ownedParameter xmi:id="__37dY5cREeSMie7FgV_S3g" name="chain" type="__3oidJcREeSMie7FgV_S3g"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="__s5SEJcREeSMie7FgV_S3g" name="CheckLoginFilter" clientDependency="__38EcJcREeSMie7FgV_S3g">
+          <interfaceRealization xmi:id="__38EcJcREeSMie7FgV_S3g" name="Filter" supplier="__35BIJcREeSMie7FgV_S3g" client="__s5SEJcREeSMie7FgV_S3g" contract="__35BIJcREeSMie7FgV_S3g"/>
+          <ownedOperation xmi:id="__38EcZcREeSMie7FgV_S3g" name="init" visibility="public">
+            <ownedParameter xmi:id="__38EcpcREeSMie7FgV_S3g" name="fConfig" type="__3oidZcREeSMie7FgV_S3g"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="__39SkJcREeSMie7FgV_S3g" name="destroy" visibility="public"/>
+          <ownedOperation xmi:id="__3_HwJcREeSMie7FgV_S3g" name="doFilter" visibility="public">
+            <ownedParameter xmi:id="__3_HwZcREeSMie7FgV_S3g" name="req" type="__3pJgJcREeSMie7FgV_S3g"/>
+            <ownedParameter xmi:id="__3_HwpcREeSMie7FgV_S3g" name="res" type="__3pJgZcREeSMie7FgV_S3g"/>
+            <ownedParameter xmi:id="__3_Hw5cREeSMie7FgV_S3g" name="chain" type="__3oidJcREeSMie7FgV_S3g"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="__35BIJcREeSMie7FgV_S3g" name="Filter"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="__3rlwZcREeSMie7FgV_S3g" name="bean">
+        <packagedElement xmi:type="uml:DataType" xmi:id="__3rlwpcREeSMie7FgV_S3g" name="AdminBean"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="__3rlw5cREeSMie7FgV_S3g" name="UserInfoBean"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="__3n7YJcREeSMie7FgV_S3g" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="__3n7YZcREeSMie7FgV_S3g" name="io">
+      <packagedElement xmi:type="uml:DataType" xmi:id="__3oicJcREeSMie7FgV_S3g" name="IOException"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="__3oicZcREeSMie7FgV_S3g" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="__3oicpcREeSMie7FgV_S3g" name="servlet">
+      <packagedElement xmi:type="uml:DataType" xmi:id="__3oic5cREeSMie7FgV_S3g" name="Filter"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="__3oidJcREeSMie7FgV_S3g" name="FilterChain"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="__3oidZcREeSMie7FgV_S3g" name="FilterConfig"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="__3oidpcREeSMie7FgV_S3g" name="ServletException"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="__3pJgJcREeSMie7FgV_S3g" name="ServletRequest"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="__3pJgZcREeSMie7FgV_S3g" name="ServletResponse"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="__3pJgpcREeSMie7FgV_S3g" name="http">
+        <packagedElement xmi:type="uml:DataType" xmi:id="__3pJg5cREeSMie7FgV_S3g" name="HttpServletRequest"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="__3pJhJcREeSMie7FgV_S3g" name="HttpServletResponse"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="__3rlwJcREeSMie7FgV_S3g" name="HttpSession"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

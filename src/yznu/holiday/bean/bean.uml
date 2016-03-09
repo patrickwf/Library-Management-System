@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="bean">
+  <packagedElement xmi:type="uml:Package" xmi:id="_LSVgoJcREeSMie7FgV_S3g" name="yznu">
+    <packagedElement xmi:type="uml:Package" xmi:id="_LSXV0JcREeSMie7FgV_S3g" name="holiday">
+      <packagedElement xmi:type="uml:Package" xmi:id="_LSXV0ZcREeSMie7FgV_S3g" name="bean">
+        <packagedElement xmi:type="uml:Class" xmi:id="_LSX84JcREeSMie7FgV_S3g" name="AdminBean">
+          <ownedComment xmi:id="_LSnNcJcREeSMie7FgV_S3g">
+            <body>/** 
+ * 管理员信息JavaBean
+ */
+</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_LgBXUJcREeSMie7FgV_S3g" name="aid" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LgJTIJcREeSMie7FgV_S3g" name="aname" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LgRO8JcREeSMie7FgV_S3g" name="asex" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Lga_8JcREeSMie7FgV_S3g" name="aage" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Lgi7wJcREeSMie7FgV_S3g" name="aidCard" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LgsswJcREeSMie7FgV_S3g" name="atel" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Lg1PoJcREeSMie7FgV_S3g" name="alevel" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LhDSEJcREeSMie7FgV_S3g" name="apsw" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_LhU-4JcREeSMie7FgV_S3g" name="getAid" visibility="public">
+            <ownedComment xmi:id="_LhcToJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return aid
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LhU-4ZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LhdhwJcREeSMie7FgV_S3g" name="setAid" visibility="public">
+            <ownedComment xmi:id="_LhjoYJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param aid 要设置的 aid
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LhdhwZcREeSMie7FgV_S3g" name="aid">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LhkPcJcREeSMie7FgV_S3g" name="getAname" visibility="public">
+            <ownedComment xmi:id="_LhrkMJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return aname
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LhkPcZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LhsLQJcREeSMie7FgV_S3g" name="setAname" visibility="public">
+            <ownedComment xmi:id="_Lhy48JcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param aname 要设置的 aname
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LhsLQZcREeSMie7FgV_S3g" name="aname">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LhzgAJcREeSMie7FgV_S3g" name="getAsex" visibility="public">
+            <ownedComment xmi:id="_Lh7b0JcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return asex
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LhzgAZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Lh8p8JcREeSMie7FgV_S3g" name="setAsex" visibility="public">
+            <ownedComment xmi:id="_LiCwkJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param asex 要设置的 asex
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_Lh8p8ZcREeSMie7FgV_S3g" name="asex">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LiDXoJcREeSMie7FgV_S3g" name="getAage" visibility="public">
+            <ownedComment xmi:id="_LiI3MJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return aage
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LiDXoZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LiKFUJcREeSMie7FgV_S3g" name="setAage" visibility="public">
+            <ownedComment xmi:id="_LiQzAJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param aage 要设置的 aage
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LiKFUZcREeSMie7FgV_S3g" name="aage">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LiRaEJcREeSMie7FgV_S3g" name="getAidCard" visibility="public">
+            <ownedComment xmi:id="_LiWSkJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return aidCard
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LiRaEZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LiXgsJcREeSMie7FgV_S3g" name="setAidCard" visibility="public">
+            <ownedComment xmi:id="_Lie1cJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param aidCard 要设置的 aidCard
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LiXgsZcREeSMie7FgV_S3g" name="aidCard">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LifcgJcREeSMie7FgV_S3g" name="getAtel" visibility="public">
+            <ownedComment xmi:id="_LimKMJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return atel
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LifcgZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Lin_YJcREeSMie7FgV_S3g" name="setAtel" visibility="public">
+            <ownedComment xmi:id="_LiutEJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param atel 要设置的 atel
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_Lin_YZcREeSMie7FgV_S3g" name="atel">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LivUIJcREeSMie7FgV_S3g" name="getAlevel" visibility="public">
+            <ownedComment xmi:id="_Li2o4JcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return alevel
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LivUIZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Li33AJcREeSMie7FgV_S3g" name="setAlevel" visibility="public">
+            <ownedComment xmi:id="_Li9WkJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param alevel 要设置的 alevel
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_Li33AZcREeSMie7FgV_S3g" name="alevel">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Li-ksJcREeSMie7FgV_S3g" name="getApsw" visibility="public">
+            <ownedComment xmi:id="_LjErUJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return apsw
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_Li-ksZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LjF5cJcREeSMie7FgV_S3g" name="setApsw" visibility="public">
+            <ownedComment xmi:id="_LjKK4JcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param apsw 要设置的 apsw
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LjF5cZcREeSMie7FgV_S3g" name="apsw">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LSn0gJcREeSMie7FgV_S3g" name="BorrowRecordBean">
+          <ownedComment xmi:id="_LSre4JcREeSMie7FgV_S3g">
+            <body>/** 
+ * 借阅记录JavaBean
+ */
+</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_LjOcUJcREeSMie7FgV_S3g" name="recordid" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LjW_MJcREeSMie7FgV_S3g" name="bookISBN" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LjfiEJcREeSMie7FgV_S3g" name="userISBN" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Ljnd4JcREeSMie7FgV_S3g" name="isback" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LjuLkJcREeSMie7FgV_S3g" name="borrowDate" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Lj0SMJcREeSMie7FgV_S3g" name="backDate" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Lj4joJcREeSMie7FgV_S3g" name="bookName" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_Lj6_4JcREeSMie7FgV_S3g" name="getBookName" visibility="public">
+            <ownedParameter xmi:id="_Lj6_4ZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Lj-qQJcREeSMie7FgV_S3g" name="setBookName" visibility="public">
+            <ownedParameter xmi:id="_Lj-qQZcREeSMie7FgV_S3g" name="bookName">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LkBtkJcREeSMie7FgV_S3g" name="getRecordid" visibility="public">
+            <ownedComment xmi:id="_LkEJ0JcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return recordid
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LkBtkZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LkEw4JcREeSMie7FgV_S3g" name="setRecordid" visibility="public">
+            <ownedComment xmi:id="_LkHNIJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param recordid 要设置的 recordid
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LkEw4ZcREeSMie7FgV_S3g" name="recordid">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LkH0MJcREeSMie7FgV_S3g" name="getBookISBN" visibility="public">
+            <ownedComment xmi:id="_LkK3gJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return bookISBN
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LkH0MZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LkLekJcREeSMie7FgV_S3g" name="setBookISBN" visibility="public">
+            <ownedComment xmi:id="_LkN60JcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param bookISBN 要设置的 bookISBN
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LkLekZcREeSMie7FgV_S3g" name="bookISBN">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LkOh4JcREeSMie7FgV_S3g" name="getUserISBN" visibility="public">
+            <ownedComment xmi:id="_LkQXEJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return userISBN
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LkOh4ZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LkRlMJcREeSMie7FgV_S3g" name="setUserISBN" visibility="public">
+            <ownedComment xmi:id="_LkUogJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param userISBN 要设置的 userISBN
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LkRlMZcREeSMie7FgV_S3g" name="userISBN">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LkVPkJcREeSMie7FgV_S3g" name="getIsback" visibility="public">
+            <ownedComment xmi:id="_LkY58JcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return isback
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LkVPkZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LkaIEJcREeSMie7FgV_S3g" name="setIsback" visibility="public">
+            <ownedComment xmi:id="_LkdycJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param isback 要设置的 isback
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LkavIJcREeSMie7FgV_S3g" name="isback">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LkeZgJcREeSMie7FgV_S3g" name="getBorrowDate" visibility="public">
+            <ownedComment xmi:id="_Lkhc0JcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return borrowDate
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LkeZgZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LkjSAJcREeSMie7FgV_S3g" name="setBorrowDate" visibility="public">
+            <ownedComment xmi:id="_Lkm8YJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param borrowDate 要设置的 borrowDate
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LkjSAZcREeSMie7FgV_S3g" name="borrowDate">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LknjcJcREeSMie7FgV_S3g" name="getBackDate" visibility="public">
+            <ownedComment xmi:id="_Lkp_sJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return backDate
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LknjcZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Lkr04JcREeSMie7FgV_S3g" name="setBackDate" visibility="public">
+            <ownedComment xmi:id="_LktqEJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param backDate 要设置的 backDate
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_Lkr04ZcREeSMie7FgV_S3g" name="backDate">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LSsF8JcREeSMie7FgV_S3g" name="UserInfoBean">
+          <ownedComment xmi:id="_LSw-cJcREeSMie7FgV_S3g">
+            <body>/** 
+ * 用户信息JavaBean
+ */
+</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_LkxUcJcREeSMie7FgV_S3g" name="uname" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Lk20AJcREeSMie7FgV_S3g" name="uage" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Lk86oJcREeSMie7FgV_S3g" name="uidCard" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LlCaMJcREeSMie7FgV_S3g" name="effectivedate" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LlHSsJcREeSMie7FgV_S3g" name="utel" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LlMyQJcREeSMie7FgV_S3g" name="balance" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LlUHAJcREeSMie7FgV_S3g" name="userId" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LlbbwJcREeSMie7FgV_S3g" name="startTime" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LliwgJcREeSMie7FgV_S3g" name="upsw" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_Llma4JcREeSMie7FgV_S3g" name="getUname" visibility="public">
+            <ownedComment xmi:id="_LlqFQJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return uname
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_Llma4ZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LlqsUJcREeSMie7FgV_S3g" name="setUname" visibility="public">
+            <ownedComment xmi:id="_LluWsJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param uname 要设置的 uname
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LlrTYJcREeSMie7FgV_S3g" name="uname">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Llu9wJcREeSMie7FgV_S3g" name="getUage" visibility="public">
+            <ownedComment xmi:id="_LlyBEJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return uage
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_Llu9wZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LlyoIJcREeSMie7FgV_S3g" name="setUage" visibility="public">
+            <ownedComment xmi:id="_Ll0dUJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param uage 要设置的 uage
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LlyoIZcREeSMie7FgV_S3g" name="uage">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Ll1EYJcREeSMie7FgV_S3g" name="getUidCard" visibility="public">
+            <ownedComment xmi:id="_Ll3goJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return uidCard
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_Ll1EYZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Ll4HsJcREeSMie7FgV_S3g" name="setUidCard" visibility="public">
+            <ownedComment xmi:id="_Ll6j8JcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param uidCard 要设置的 uidCard
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_Ll4HsZcREeSMie7FgV_S3g" name="uidCard">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Ll7LAJcREeSMie7FgV_S3g" name="getEffectivedate" visibility="public">
+            <ownedComment xmi:id="_Ll9nQJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return effectivedate
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_Ll7LAZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Ll-1YJcREeSMie7FgV_S3g" name="setEffectivedate" visibility="public">
+            <ownedComment xmi:id="_LmBRoJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param effectivedate 要设置的 effectivedate
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_Ll-1YZcREeSMie7FgV_S3g" name="effectivedate">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LmB4sJcREeSMie7FgV_S3g" name="getUtel" visibility="public">
+            <ownedComment xmi:id="_LmDt4JcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return utel
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LmB4sZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LmE8AJcREeSMie7FgV_S3g" name="setUtel" visibility="public">
+            <ownedComment xmi:id="_LmH_UJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param utel 要设置的 utel
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LmE8AZcREeSMie7FgV_S3g" name="utel">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LmImYJcREeSMie7FgV_S3g" name="getBalance" visibility="public">
+            <ownedComment xmi:id="_LmLCoJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return balance
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LmImYZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LmMQwJcREeSMie7FgV_S3g" name="setBalance" visibility="public">
+            <ownedComment xmi:id="_LmOtAJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param balance 要设置的 balance
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LmMQwZcREeSMie7FgV_S3g" name="balance">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LmP7IJcREeSMie7FgV_S3g" name="getUserId" visibility="public">
+            <ownedComment xmi:id="_LmRwUJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return userId
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LmP7IZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LmTlgJcREeSMie7FgV_S3g" name="setUserId" visibility="public">
+            <ownedComment xmi:id="_LmVasJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param userId 要设置的 userId
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LmTlgZcREeSMie7FgV_S3g" name="userId">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LmXP4JcREeSMie7FgV_S3g" name="getStartTime" visibility="public">
+            <ownedComment xmi:id="_LmZFEJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return startTime
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LmXP4ZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LmcIYJcREeSMie7FgV_S3g" name="setStartTime" visibility="public">
+            <ownedComment xmi:id="_LmfLsJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param startTime 要设置的 startTime
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LmcIYZcREeSMie7FgV_S3g" name="startTime">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LmfywJcREeSMie7FgV_S3g" name="getUpsw" visibility="public">
+            <ownedComment xmi:id="_LmiPAJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return upsw
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LmfywZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LmkrQJcREeSMie7FgV_S3g" name="setUpsw" visibility="public">
+            <ownedComment xmi:id="_LmmgcJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param upsw 要设置的 upsw
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LmkrQZcREeSMie7FgV_S3g" name="upsw">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LSxlgJcREeSMie7FgV_S3g" name="BlackListBean">
+          <ownedAttribute xmi:id="_LmnukJcREeSMie7FgV_S3g" name="Arrearageuname" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LmqK0JcREeSMie7FgV_S3g" name="Arrearageuid" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LmsnEJcREeSMie7FgV_S3g" name="ArrearageuidCard" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LmvDUJcREeSMie7FgV_S3g" name="ArrearageBalance" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_LmwRcJcREeSMie7FgV_S3g" name="getArrearageBalance" visibility="public">
+            <ownedParameter xmi:id="_LmwRcZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LmyGoJcREeSMie7FgV_S3g" name="setArrearageBalance" visibility="public">
+            <ownedParameter xmi:id="_LmyGoZcREeSMie7FgV_S3g" name="arrearageBalance">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LmzUwJcREeSMie7FgV_S3g" name="getArrearageuname" visibility="public">
+            <ownedParameter xmi:id="_LmzUwZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Lm1J8JcREeSMie7FgV_S3g" name="setArrearageuname" visibility="public">
+            <ownedParameter xmi:id="_Lm1J8ZcREeSMie7FgV_S3g" name="arrearageuname">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Lm2YEJcREeSMie7FgV_S3g" name="getArrearageuid" visibility="public">
+            <ownedParameter xmi:id="_Lm2YEZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Lm4NQJcREeSMie7FgV_S3g" name="setArrearageuid" visibility="public">
+            <ownedParameter xmi:id="_Lm4NQZcREeSMie7FgV_S3g" name="arrearageuid">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Lm5bYJcREeSMie7FgV_S3g" name="getArrearageuidCard" visibility="public">
+            <ownedParameter xmi:id="_Lm5bYZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Lm7QkJcREeSMie7FgV_S3g" name="setArrearageuidCard" visibility="public">
+            <ownedParameter xmi:id="_Lm7QkZcREeSMie7FgV_S3g" name="arrearageuidCard">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LSzasJcREeSMie7FgV_S3g" name="BookInfoBean">
+          <ownedComment xmi:id="_LS7WgJcREeSMie7FgV_S3g">
+            <body>/** 
+ * 图书信息JavaBean
+ */
+</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_Lm-68JcREeSMie7FgV_S3g" name="ISBN" visibility="private">
+            <ownedComment xmi:id="_LnBXMJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 图书编号
+ */
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LnDMYJcREeSMie7FgV_S3g" name="typeId" visibility="private">
+            <ownedComment xmi:id="_LnFBkJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 图书类别
+ */
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LnHd0JcREeSMie7FgV_S3g" name="bookname" visibility="private">
+            <ownedComment xmi:id="_LnJTAJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 图书名称
+ */
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LnLvQJcREeSMie7FgV_S3g" name="writer" visibility="private">
+            <ownedComment xmi:id="_LnNkcJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 作者
+ */
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LnQAsJcREeSMie7FgV_S3g" name="translator" visibility="private">
+            <ownedComment xmi:id="_LnR14JcREeSMie7FgV_S3g">
+              <body>/** 
+ * 译者
+ */
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LnTrEJcREeSMie7FgV_S3g" name="publisher" visibility="private">
+            <ownedComment xmi:id="_LnWuYJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 出版商
+ */
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LnZKoJcREeSMie7FgV_S3g" name="date" visibility="private">
+            <ownedComment xmi:id="_Lnbm4JcREeSMie7FgV_S3g">
+              <body>/** 
+ * 出版日期
+ */
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_LneDIJcREeSMie7FgV_S3g" name="price" visibility="private">
+            <ownedComment xmi:id="_LngfYJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 图书价格
+ */
+</body>
+            </ownedComment>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_LnhGcJcREeSMie7FgV_S3g" name="getISBN" visibility="public">
+            <ownedComment xmi:id="_Lni7oJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return iSBN
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LnhGcZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LnkJwJcREeSMie7FgV_S3g" name="setISBN" visibility="public">
+            <ownedComment xmi:id="_LnmmAJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param iSBN 要设置的 iSBN
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LnkJwZcREeSMie7FgV_S3g" name="iSBN">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LnnNEJcREeSMie7FgV_S3g" name="getTypeId" visibility="public">
+            <ownedComment xmi:id="_LoGVQJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return typeId
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LnnNEZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LoHjYJcREeSMie7FgV_S3g" name="setTypeId" visibility="public">
+            <ownedComment xmi:id="_LoJ_oJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param typeId 要设置的 typeId
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LoHjYZcREeSMie7FgV_S3g" name="typeId">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LoKmsJcREeSMie7FgV_S3g" name="getBookname" visibility="public">
+            <ownedComment xmi:id="_LoNC8JcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return bookname
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LoKmsZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LoOREJcREeSMie7FgV_S3g" name="setBookname" visibility="public">
+            <ownedComment xmi:id="_LoQtUJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param bookname 要设置的 bookname
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LoOREZcREeSMie7FgV_S3g" name="bookname">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LoRUYJcREeSMie7FgV_S3g" name="getWriter" visibility="public">
+            <ownedComment xmi:id="_LoTwoJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return writer
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LoRUYZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LoU-wJcREeSMie7FgV_S3g" name="setWriter" visibility="public">
+            <ownedComment xmi:id="_LoXbAJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param writer 要设置的 writer
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LoU-wZcREeSMie7FgV_S3g" name="writer">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LoYCEJcREeSMie7FgV_S3g" name="getTranslator" visibility="public">
+            <ownedComment xmi:id="_LoaeUJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return translator
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LoYCEZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LobscJcREeSMie7FgV_S3g" name="setTranslator" visibility="public">
+            <ownedComment xmi:id="_LoeIsJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param translator 要设置的 translator
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LobscZcREeSMie7FgV_S3g" name="translator">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LoevwJcREeSMie7FgV_S3g" name="getPublisher" visibility="public">
+            <ownedComment xmi:id="_LohMAJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return publisher
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LoevwZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Lok2YJcREeSMie7FgV_S3g" name="setPublisher" visibility="public">
+            <ownedComment xmi:id="_LopH0JcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param publisher 要设置的 publisher
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_Lok2YZcREeSMie7FgV_S3g" name="publisher">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LoqV8JcREeSMie7FgV_S3g" name="getDate" visibility="public">
+            <ownedComment xmi:id="_LosyMJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return date
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LoqV8ZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LotZQJcREeSMie7FgV_S3g" name="setDate" visibility="public">
+            <ownedComment xmi:id="_LowckJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param date 要设置的 date
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LouAUJcREeSMie7FgV_S3g" name="date">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LoxDoJcREeSMie7FgV_S3g" name="getPrice" visibility="public">
+            <ownedComment xmi:id="_Loy40JcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return price
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_LoxDoZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Lo0G8JcREeSMie7FgV_S3g" name="setPrice" visibility="public">
+            <ownedComment xmi:id="_Lo18IJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param price 要设置的 price
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_Lo0G8ZcREeSMie7FgV_S3g" name="price">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_LS8koJcREeSMie7FgV_S3g" name="BookTypeBean">
+          <ownedAttribute xmi:id="_Lo3KQJcREeSMie7FgV_S3g" name="btid" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Lo4YYJcREeSMie7FgV_S3g" name="type" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_Lo6NkJcREeSMie7FgV_S3g" name="days" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_Lo60oJcREeSMie7FgV_S3g" name="getBtid" visibility="public">
+            <ownedParameter xmi:id="_Lo60oZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Lo8p0JcREeSMie7FgV_S3g" name="setBtid" visibility="public">
+            <ownedParameter xmi:id="_Lo8p0ZcREeSMie7FgV_S3g" name="btid">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Lo938JcREeSMie7FgV_S3g" name="getType" visibility="public">
+            <ownedParameter xmi:id="_Lo938ZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_Lo_tIJcREeSMie7FgV_S3g" name="setType" visibility="public">
+            <ownedParameter xmi:id="_Lo_tIZcREeSMie7FgV_S3g" name="type">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LpA7QJcREeSMie7FgV_S3g" name="getDays" visibility="public">
+            <ownedParameter xmi:id="_LpA7QZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_LpCwcJcREeSMie7FgV_S3g" name="setDays" visibility="public">
+            <ownedParameter xmi:id="_LpCwcZcREeSMie7FgV_S3g" name="days">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

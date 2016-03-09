@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="dao">
+  <packagedElement xmi:type="uml:Package" xmi:id="_zAkJYJcREeSMie7FgV_S3g" name="yznu">
+    <packagedElement xmi:type="uml:Package" xmi:id="_zAkwcJcREeSMie7FgV_S3g" name="holiday">
+      <packagedElement xmi:type="uml:Package" xmi:id="_zAkwcZcREeSMie7FgV_S3g" name="dao">
+        <packagedElement xmi:type="uml:Class" xmi:id="_zAnMsJcREeSMie7FgV_S3g" name="BookDao" clientDependency="_zL86AJcREeSMie7FgV_S3g">
+          <ownedComment xmi:id="_zApB4JcREeSMie7FgV_S3g">
+            <body>/** 
+ * 关于图书的数据库操作
+ */
+</body>
+          </ownedComment>
+          <generalization xmi:id="_zL-IIJcREeSMie7FgV_S3g" general="_zA8j4JcREeSMie7FgV_S3g"/>
+          <interfaceRealization xmi:id="_zL86AJcREeSMie7FgV_S3g" name="BookInterface" supplier="_zLj4cJcREeSMie7FgV_S3g" client="_zAnMsJcREeSMie7FgV_S3g" contract="_zLj4cJcREeSMie7FgV_S3g"/>
+          <ownedOperation xmi:id="_zMqrsZcREeSMie7FgV_S3g" name="addKindsBooks" visibility="public">
+            <ownedComment xmi:id="_zMr50JcREeSMie7FgV_S3g">
+              <body>/** 
+ * 添加图书种类（参数个数：2【btid、type】）（可借天数默认30天）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zMqrspcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zMqrs5cREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zMqrtJcREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zMqrtZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zMsg4JcREeSMie7FgV_S3g" name="updateKindsbooks" visibility="public">
+            <ownedComment xmi:id="_zMtvAJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 更新图书种类（参数个数：2【type、btid】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zMsg4ZcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zMsg4pcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zMsg45cREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zMsg5JcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zMtvAZcREeSMie7FgV_S3g" name="addBooks" visibility="public">
+            <ownedComment xmi:id="_zMu9IJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 添加图书（参数个数：8【ISBN、typeId、bookname、writer、translator、publisher、date、price】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zMtvApcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zMtvA5cREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zMtvBJcREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zMtvBZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zMvkMJcREeSMie7FgV_S3g" name="deleteBooks" visibility="public">
+            <ownedComment xmi:id="_zMwyUJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 删除图书（参数个数：1【ISBN】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zMvkMZcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zMvkMpcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zMvkM5cREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zMvkNJcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zMxZYJcREeSMie7FgV_S3g" name="borrowBook" visibility="public">
+            <ownedComment xmi:id="_zMyngJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 借阅图书（参数个数：2【ISBN、userISBN】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zMxZYZcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zMxZYpcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zMxZY5cREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zMxZZJcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zMyngZcREeSMie7FgV_S3g" name="backBook" visibility="public">
+            <ownedComment xmi:id="_zMz1oJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 归还图书（参数个数：2【ISBN、userISBN】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zMyngpcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zMyng5cREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zMynhJcREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zMynhZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zM0csJcREeSMie7FgV_S3g" name="renewBook" visibility="public">
+            <ownedComment xmi:id="_zM1q0JcREeSMie7FgV_S3g">
+              <body>/** 
+ * 续借图书（参数个数：2【ISBN、userISBN】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zM0csZcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zM0cspcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zM0cs5cREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zM0ctJcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zM1q0ZcREeSMie7FgV_S3g" name="deleteNewBooks" visibility="public">
+            <ownedComment xmi:id="_zM248JcREeSMie7FgV_S3g">
+              <body>/** 
+ * 删除新增图书表中的图书（参数个数：1【ISBN】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zM1q0pcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zM1q05cREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zM1q1JcREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zM1q1ZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zM3gAJcREeSMie7FgV_S3g" name="addNewStocks" visibility="public">
+            <ownedComment xmi:id="_zM5VMJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 添加新增图书库存量（参数个数：1【ISBN】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zM3gAZcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zM3gApcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zM3gA5cREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zM3gBJcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zApo8JcREeSMie7FgV_S3g" name="UserDao" clientDependency="_zM5VMpcREeSMie7FgV_S3g">
+          <ownedComment xmi:id="_zAssQJcREeSMie7FgV_S3g">
+            <body>/** 
+ * 关于用户的数据库操作
+ */
+</body>
+          </ownedComment>
+          <generalization xmi:id="_zM5VM5cREeSMie7FgV_S3g" general="_zA8j4JcREeSMie7FgV_S3g"/>
+          <interfaceRealization xmi:id="_zM5VMpcREeSMie7FgV_S3g" name="UserInterface" supplier="_zM5VMZcREeSMie7FgV_S3g" client="_zApo8JcREeSMie7FgV_S3g" contract="_zM5VMZcREeSMie7FgV_S3g"/>
+          <ownedOperation xmi:id="_zM58QJcREeSMie7FgV_S3g" name="addUser" visibility="public">
+            <ownedComment xmi:id="_zM8YgJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 添加用户（参数个数：6【Uname、Uage、UidCard、Utel、UserId、Upsw】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zM58QZcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zM58QpcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zM58Q5cREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zM58RJcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zM8YgZcREeSMie7FgV_S3g" name="addArrearageUser" visibility="public">
+            <ownedComment xmi:id="_zM-0wJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 添加黑名单用户（参数个数：3【Uname、UidCard、UserId】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zM8YgpcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zM8Yg5cREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zM8YhJcREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zM8YhZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zM-0wZcREeSMie7FgV_S3g" name="updateUserInfo" visibility="public">
+            <ownedComment xmi:id="_zNBRAJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 更新用户信息（参数个数：3【Uname、Utel、UserId】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zM-0wpcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zM-0w5cREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zM-0xJcREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zM-0xZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zNB4EZcREeSMie7FgV_S3g" name="getUser" visibility="public">
+            <ownedComment xmi:id="_zNEUUJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 根据Userid获取用户信息（参数个数：1【UserId】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zNB4EpcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNB4E5cREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNB4FJcREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zNB4FZcREeSMie7FgV_S3g" name="return" type="_zNB4EJcREeSMie7FgV_S3g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zNE7YJcREeSMie7FgV_S3g" name="checkLogin" visibility="public">
+            <ownedComment xmi:id="_zNHXoJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 检查普通用户登陆（参数个数：2【UserId、Upsw】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zNE7YZcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNE7YpcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNE7Y5cREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zNE7ZJcREeSMie7FgV_S3g" name="return" type="_zNB4EJcREeSMie7FgV_S3g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zNH-sJcREeSMie7FgV_S3g" name="checkAdminLogin" visibility="public">
+            <ownedComment xmi:id="_zNKa8JcREeSMie7FgV_S3g">
+              <body>/** 
+ * 检查管理员登陆（参数个数：2【AId、Apsw】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zNH-sZcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNH-spcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNH-s5cREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zNH-tJcREeSMie7FgV_S3g" name="return" type="_zLlto5cREeSMie7FgV_S3g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zNKa8ZcREeSMie7FgV_S3g" name="rechargeUser" visibility="public">
+            <ownedComment xmi:id="_zNNeQJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 进行充值（参数个数：2【UserId、充值数目】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zNKa8pcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNKa85cREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNKa9JcREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zNKa9ZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zNNeQZcREeSMie7FgV_S3g" name="updatePsw" visibility="public">
+            <ownedComment xmi:id="_zNQhkJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 修改密码（参数个数：2【UserId、新密码】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zNNeQpcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNNeQ5cREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNNeRJcREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zNNeRZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zNQhkZcREeSMie7FgV_S3g" name="getAllUser" visibility="public">
+            <ownedComment xmi:id="_zNS90JcREeSMie7FgV_S3g">
+              <body>/** 
+ * 得到所有的用户信息
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zNQhkpcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNQhk5cREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNQhlJcREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zNQhlZcREeSMie7FgV_S3g" name="return" type="_zLltoZcREeSMie7FgV_S3g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zNTk4ZcREeSMie7FgV_S3g" name="getArrearageUser" visibility="public">
+            <ownedComment xmi:id="_zNWBIJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 获取某一黑名单用户信息（参数个数：1【arrearageId】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zNTk4pcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNTk45cREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNTk5JcREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zNTk5ZcREeSMie7FgV_S3g" name="return" type="_zNTk4JcREeSMie7FgV_S3g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zNWoMJcREeSMie7FgV_S3g" name="deleteArrearageUser" visibility="public">
+            <ownedComment xmi:id="_zNZEcJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 删除黑名单用户（参数个数：1【arrearageId】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zNWoMZcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNWoMpcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNWoM5cREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zNWoNJcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zNZrgJcREeSMie7FgV_S3g" name="rechargeArrearageUser" visibility="public">
+            <ownedComment xmi:id="_zNcHwJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 充值后更改黑名单余额 （参数个数：1【arrearageId】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zNZrgZcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNZrgpcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNZrg5cREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zNZrhJcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zAwWoJcREeSMie7FgV_S3g" name="QueryDao" clientDependency="_zNcu0ZcREeSMie7FgV_S3g">
+          <ownedComment xmi:id="_zA12MJcREeSMie7FgV_S3g">
+            <body>/** 
+ * 关于查询的数据库操作
+ */
+</body>
+          </ownedComment>
+          <generalization xmi:id="_zNcu0pcREeSMie7FgV_S3g" general="_zA8j4JcREeSMie7FgV_S3g"/>
+          <interfaceRealization xmi:id="_zNcu0ZcREeSMie7FgV_S3g" name="QueryInterface" supplier="_zNcu0JcREeSMie7FgV_S3g" client="_zAwWoJcREeSMie7FgV_S3g" contract="_zNcu0JcREeSMie7FgV_S3g"/>
+          <ownedOperation xmi:id="_zNdV4JcREeSMie7FgV_S3g" name="QueryBorrowRecord" visibility="public">
+            <ownedParameter xmi:id="_zNdV4ZcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNdV4pcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNdV45cREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zNdV5JcREeSMie7FgV_S3g" name="return" type="_zLltoZcREeSMie7FgV_S3g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zNi1cJcREeSMie7FgV_S3g" name="QueryKindsBooks" visibility="public">
+            <ownedComment xmi:id="_zNnG4JcREeSMie7FgV_S3g">
+              <body>/** 
+ * 查询某一种类的图书
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zNi1cZcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNi1cpcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNi1c5cREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zNi1dJcREeSMie7FgV_S3g" name="return" type="_zLltoZcREeSMie7FgV_S3g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zNnt8JcREeSMie7FgV_S3g" name="QuerySearchBooks" visibility="public">
+            <ownedComment xmi:id="_zNrYUJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 模糊查询图书
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zNnt8ZcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNnt8pcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNnt85cREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zNnt9JcREeSMie7FgV_S3g" name="a">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNnt9ZcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNnt9pcREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zNnt95cREeSMie7FgV_S3g" name="return" type="_zLltoZcREeSMie7FgV_S3g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zNr_YJcREeSMie7FgV_S3g" name="QueryBook" visibility="public">
+            <ownedParameter xmi:id="_zNr_YZcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNr_YpcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNr_Y5cREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zNr_ZJcREeSMie7FgV_S3g" name="return" type="_zLni0JcREeSMie7FgV_S3g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zNwQ0JcREeSMie7FgV_S3g" name="QueryBookStock" visibility="public">
+            <ownedComment xmi:id="_zNz7MJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 查询库存量（参数个数：1【ISBN】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zNwQ0ZcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zNwQ0pcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zNwQ05cREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zNwQ1JcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zN0iQJcREeSMie7FgV_S3g" name="pageList" visibility="public">
+            <ownedComment xmi:id="_zN4MoJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 分页查询书籍（int page, int pageContent）
+ * @param page 显示的页码
+ * @param pageContent 每页的容量
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zN0iQZcREeSMie7FgV_S3g" name="page">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zN0iQpcREeSMie7FgV_S3g" name="pageContent">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zN0iQ5cREeSMie7FgV_S3g" name="type">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zN0iRJcREeSMie7FgV_S3g" name="return" type="_zLltoZcREeSMie7FgV_S3g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zN4MoZcREeSMie7FgV_S3g" name="queryTypeName" visibility="public">
+            <ownedComment xmi:id="_zN8eEJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 查询某一种类书籍名
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zN4MopcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zN4Mo5cREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zN4MpJcREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zN4MpZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zN8eEZcREeSMie7FgV_S3g" name="queryAllTypeName" visibility="public">
+            <ownedComment xmi:id="_zOBWkJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 查询所有种类书籍名
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zN8eEpcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zN8eE5cREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zN8eFJcREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zN8eFZcREeSMie7FgV_S3g" name="return" type="_zLltoZcREeSMie7FgV_S3g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zOBWkZcREeSMie7FgV_S3g" name="QueryArrearageBalance" visibility="public">
+            <ownedComment xmi:id="_zOFA8JcREeSMie7FgV_S3g">
+              <body>/** 
+ * 查找某一黑名单用户余额 （参数个数：1【arrearageId】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zOBWkpcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zOBWk5cREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zOBWlJcREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zOBWlZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zOFoAJcREeSMie7FgV_S3g" name="count" visibility="public">
+            <ownedComment xmi:id="_zOJSYJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 查询某一种类书的个数（参数1【typeId】）
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zOFoAZcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zOFoApcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zOFoA5cREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zOFoBJcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zOJ5cJcREeSMie7FgV_S3g" name="QueryNewBooks" visibility="public">
+            <ownedComment xmi:id="_zOM8wJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 查询所有新图书
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zOJ5cZcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zOJ5cpcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zOJ5c5cREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zOJ5dJcREeSMie7FgV_S3g" name="return" type="_zLltoZcREeSMie7FgV_S3g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zONj0JcREeSMie7FgV_S3g" name="QueryNewBook" visibility="public">
+            <ownedParameter xmi:id="_zONj0ZcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zONj0pcREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zONj05cREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zONj1JcREeSMie7FgV_S3g" name="return" type="_zLni0JcREeSMie7FgV_S3g" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zA6usJcREeSMie7FgV_S3g" name="PropertiesUtil">
+          <ownedComment xmi:id="_zA780JcREeSMie7FgV_S3g">
+            <body>/** 
+ * 属性文件读取，单例模式,对外只提供公共静态方法
+ */
+</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_zOScUJcREeSMie7FgV_S3g" name="util" visibility="private" isStatic="true" type="_zA6usJcREeSMie7FgV_S3g" association="_zY2tkJcREeSMie7FgV_S3g"/>
+          <ownedAttribute xmi:id="_zOTqcJcREeSMie7FgV_S3g" name="prop" visibility="private" type="_zLpYApcREeSMie7FgV_S3g"/>
+          <ownedOperation xmi:id="_zOURgJcREeSMie7FgV_S3g" name="load" visibility="private"/>
+          <ownedOperation xmi:id="_zOU4kJcREeSMie7FgV_S3g" name="get" visibility="public" isStatic="true">
+            <ownedComment xmi:id="_zOVfoJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 读取键对应的值
+ * @param key
+ * @return
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zOU4kZcREeSMie7FgV_S3g" name="key">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zOU4kpcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_zA8j4JcREeSMie7FgV_S3g" name="BaseDao">
+          <ownedComment xmi:id="_zA_AIJcREeSMie7FgV_S3g">
+            <body>/** 
+ * 封装常规的数据库增，删，改，查操作
+ */
+</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_zOYi8JcREeSMie7FgV_S3g" name="driver" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_zOYi8ZcREeSMie7FgV_S3g" value=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_zObmQJcREeSMie7FgV_S3g" name="url" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_zObmQZcREeSMie7FgV_S3g" value=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_zOeCgJcREeSMie7FgV_S3g" name="user" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_zOeCgZcREeSMie7FgV_S3g" value=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_zOgewJcREeSMie7FgV_S3g" name="password" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_zOgewZcREeSMie7FgV_S3g" value=""/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_zOkJIJcREeSMie7FgV_S3g" name="time" visibility="private" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_zOkJIZcREeSMie7FgV_S3g" value="2"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_zOnMcJcREeSMie7FgV_S3g" name="day" visibility="private" isStatic="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_zOnMcZcREeSMie7FgV_S3g" value="30"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_zOpBoJcREeSMie7FgV_S3g" name="getConnection" visibility="public">
+            <ownedParameter xmi:id="_zOpBoZcREeSMie7FgV_S3g" name="return" type="_zLm7wJcREeSMie7FgV_S3g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zOq20JcREeSMie7FgV_S3g" name="update" visibility="public">
+            <ownedComment xmi:id="_zOsE8JcREeSMie7FgV_S3g">
+              <body>/** 
+ * 统一增，删，改方法
+ * @param sql 预编译的SQL语句
+ * @param args 占位符（?）对应的参数列表
+ * @return
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zOq20ZcREeSMie7FgV_S3g" name="sql">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zOq20pcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zOq205cREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zOq21JcREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zOq21ZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zOssAJcREeSMie7FgV_S3g" name="select" visibility="public">
+            <ownedComment xmi:id="_zOuhMJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 统一查询方法
+ * @param sql
+ * @param args
+ * @return
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zOssAZcREeSMie7FgV_S3g" name="sql">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zOssApcREeSMie7FgV_S3g" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zOssA5cREeSMie7FgV_S3g" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zOssBJcREeSMie7FgV_S3g"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_zOssBZcREeSMie7FgV_S3g" name="return" type="_zLlGkpcREeSMie7FgV_S3g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zOvIQJcREeSMie7FgV_S3g" name="getDate" visibility="public">
+            <ownedComment xmi:id="_zOwWYJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 获取当前指定格式的日期
+ * @return
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zOvIQZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zOwWYZcREeSMie7FgV_S3g" name="getAfterDate" visibility="public">
+            <ownedComment xmi:id="_zOyLkJcREeSMie7FgV_S3g">
+              <body>/** 
+ * 获取2年后指定格式的日期
+ * @return
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zOwWYpcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zOyyoJcREeSMie7FgV_S3g" name="getAfter30Date" visibility="public">
+            <ownedComment xmi:id="_zO1O4JcREeSMie7FgV_S3g">
+              <body>/** 
+ * 获取30天后指定格式的日期
+ * @return
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zOyyoZcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zO1O4ZcREeSMie7FgV_S3g" name="getDay" visibility="public" isStatic="true">
+            <ownedComment xmi:id="_zO3EEJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @return day
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zO1O4pcREeSMie7FgV_S3g" name="return" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_zO3rIJcREeSMie7FgV_S3g" name="setDay" visibility="public" isStatic="true">
+            <ownedComment xmi:id="_zO5gUJcREeSMie7FgV_S3g">
+              <body>/** 
+ * @param day 要设置的 day
+ */
+</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_zO3rIZcREeSMie7FgV_S3g" name="day">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_zM5VMZcREeSMie7FgV_S3g" name="UserInterface"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_zNcu0JcREeSMie7FgV_S3g" name="QueryInterface"/>
+        <packagedElement xmi:type="uml:Association" xmi:id="_zY2tkJcREeSMie7FgV_S3g" memberEnd="_zOScUJcREeSMie7FgV_S3g _zY2tkZcREeSMie7FgV_S3g">
+          <ownedEnd xmi:id="_zY2tkZcREeSMie7FgV_S3g" name="PropertiesUtil" type="_zA6usJcREeSMie7FgV_S3g" association="_zY2tkJcREeSMie7FgV_S3g"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_zLhcMJcREeSMie7FgV_S3g" name="impl">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_zLj4cJcREeSMie7FgV_S3g" name="BookInterface"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_zLltpZcREeSMie7FgV_S3g" name="UserInterface"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_zLni05cREeSMie7FgV_S3g" name="QueryInterface"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_zLltopcREeSMie7FgV_S3g" name="bean">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_zLlto5cREeSMie7FgV_S3g" name="AdminBean"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_zLltpJcREeSMie7FgV_S3g" name="*"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_zLni0JcREeSMie7FgV_S3g" name="BookInfoBean"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_zLni0ZcREeSMie7FgV_S3g" name="BookTypeBean"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_zLni0pcREeSMie7FgV_S3g" name="BorrowRecordBean"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_zLlGkJcREeSMie7FgV_S3g" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_zLlGkZcREeSMie7FgV_S3g" name="sql">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zLlGkpcREeSMie7FgV_S3g" name="ResultSet"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zLlGk5cREeSMie7FgV_S3g" name="SQLException"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zLm7wJcREeSMie7FgV_S3g" name="Connection"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zLm7wZcREeSMie7FgV_S3g" name="PreparedStatement"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zLp_EJcREeSMie7FgV_S3g" name="DriverManager"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_zLlGlJcREeSMie7FgV_S3g" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zLltoJcREeSMie7FgV_S3g" name="ArrayList"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zLltoZcREeSMie7FgV_S3g" name="List"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zLpYApcREeSMie7FgV_S3g" name="Properties"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zLp_E5cREeSMie7FgV_S3g" name="Date"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zLp_FJcREeSMie7FgV_S3g" name="GregorianCalendar"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_zLow8JcREeSMie7FgV_S3g" name="io">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zLpYAJcREeSMie7FgV_S3g" name="IOException"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zLpYAZcREeSMie7FgV_S3g" name="InputStream"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_zLp_EZcREeSMie7FgV_S3g" name="text">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_zLp_EpcREeSMie7FgV_S3g" name="SimpleDateFormat"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_zNB4EJcREeSMie7FgV_S3g" name="UserInfoBean"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_zNTk4JcREeSMie7FgV_S3g" name="BlackListBean"/>
+</uml:Model>
